@@ -21,7 +21,7 @@
   <body>
     <!-- Navbar -->
     <section class="navbar">
-        <ul>
+        <ul id="links">
           <li value="emissaries">
             <b><a href="#emissaries" title="Emissaries">our team</a></b>
           </li>
@@ -32,6 +32,9 @@
             <b><a href="#regulations" title="Regulations">regulations</a></b>
           </li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
       <!--menu line end here-->
     </section>
@@ -268,6 +271,18 @@
      prevEl: ".swiper-button-prev",
    },
  });
+
+//  Tambah Ini 
+  function myFunction() {
+    var x = document.getElementById("links");
+    if (x.style.display === "block") {
+      if (screen.width <= 600) {
+        x.style.display = "none";
+      }
+    } else {
+      x.style.display = "block";
+    }
+  }
     </script>
   </body>
 </html>
