@@ -615,13 +615,21 @@ div.swiper-button-prev {
 .container-3 {
   width: 50%;
 }
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 600px) {
   .container-2 {
     width: 95%;
   }
   
   .container-3 {
     width: 95%;
+  }
+  .second-container {
+    display: block;
+    justify-content: space-around;
+  }
+  
+  .second-content {
+    display: block;
   }
  
 }
