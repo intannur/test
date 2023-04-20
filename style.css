@@ -1,0 +1,857 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "EB Garamond", serif;
+  color: #fff;
+  height: 100%;
+  background-color: #000;
+}
+
+/* Navbar */
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  height: auto;
+  font-family: "Teko", sans-serif;
+  padding: 30px 3rem;
+  background-color: #000;
+  justify-content: flex-end;
+  border-bottom: 1px solid #280101;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  font-weight: 400;
+  width: 29%;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.59px;
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 64px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin: 0;
+  }
+  
+  .navbar {
+    display: inline-flex;
+    font-family: "Teko", sans-serif;
+    padding: 10px 1rem;
+    background-color: #000;
+    border-bottom: 1px solid #280101;
+    position: sticky;
+    top: 0;
+  }
+  
+  ul {
+    font-weight: 400;
+    width: 0%;
+  }
+  
+  li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  
+  li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: none;
+  }
+}
+
+
+/* Jumbotron */
+.jumbotron-wrapper {
+  background-image: linear-gradient(180deg, rgba(31, 30, 30, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/3.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  height: 700px;
+  position: relative;
+}
+
+.jumbotron {
+  margin-left: 40px;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.page-title {
+  font-family: "Resident Evil 4 Remake Font";
+  font-weight: normal;
+  font-size: 150px;
+  letter-spacing: 3px;
+  font-style: normal;
+  width: 500px;
+}
+
+p.lead {
+  font-size: 25px;
+  margin: 0 0 15px 0;
+}
+
+.button-1 {
+  background-color: #b6292b;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 2px;
+  cursor: pointer;
+  letter-spacing: 1.75px;
+  transition-duration: 0.4s;
+}
+
+.button-1:hover {
+  background-color: #000;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .jumbotron-wrapper {
+    background-image: linear-gradient(180deg, rgba(31, 30, 30, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 350px;
+    position: relative;
+  }
+  
+  .jumbotron {
+    margin-left: 30px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding-left: 0rem;
+    padding-right: 6rem;
+  }
+  
+  .page-title {
+    font-family: "Resident Evil 4 Remake Font";
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-style: normal;
+    width: 200px;
+  }
+  
+  p.lead {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+  }
+  
+  .button-1 {
+    background-color: #b6292b;
+    border: none;
+    color: #fff;
+    padding: 10px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 4px 2px;
+    cursor: pointer;
+    letter-spacing: 1.75px;
+    transition-duration: 0.4s;
+  }
+  
+  .button-1:hover {
+    background-color: #000;
+    color: white;
+  }
+}
+
+/* Swiper */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.ct-wrapper {
+  height: 700px;
+  width: auto;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ct-title {
+  font-family: "Resident Evil 4 Remake Font";
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+@media screen and (max-width: 400px) {
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.ct-wrapper {
+  height: 650px;
+  width: auto;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ct-title {
+  font-family: "Resident Evil 4 Remake Font";
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+}
+
+/* Swiper container stylng */
+.swiper {
+  width: 855px;
+  height: 80%;
+}
+@media screen and (max-width: 400px) {
+  .swiper {
+    width: 400px;
+    height: 80%;
+  }
+  .swiper-slide {
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 50% !important;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 30%;
+    height: 80%;
+    object-fit: cover;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 88% !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  outline: none;
+  color: #c8191980 !important;
+}
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 70%;
+}
+/* Swiper */
+
+/* Main Content */
+.first-container {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/img2.png);
+  justify-content: center;
+  padding: 60px;
+}
+
+.title-block {
+  font-family: "Resident Evil 4 Remake Font";
+  text-align: center;
+  font-size: 100px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0;
+}
+
+.desc-text {
+  width: 78%;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+  margin: 20px auto;
+}
+@media screen and (max-width: 400px) {
+  .first-container {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/img2.png);
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .title-block {
+    font-family: "Resident Evil 4 Remake Font";
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+  }
+  
+}
+
+/* Gallery */
+.grid-wrapper {
+  width: 76%;
+  margin: auto;
+}
+
+.image-grid {
+  padding: 20px;
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-row .image {
+  margin: 12px;
+  height: 240px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.15), 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.image-01 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/about_img01.jpg");
+  flex: 1;
+}
+
+.image-02 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/location_img03.jpg");
+  flex: 1;
+}
+
+.image-03 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/location_img06.jpg");
+  flex: 2;
+}
+
+.image-04 {
+  background-image: url("https://r4.wallpaperflare.com/wallpaper/668/38/486/resident-evil-4-resident-evil-4-remake-leon-kennedy-ashley-allen-hd-wallpaper-1970285d617a4d6be667c82fb051963d.jpg");
+  flex: 1;
+}
+
+.image-05 {
+  background-image: url("https://r4.wallpaperflare.com/wallpaper/230/177/121/leon-s-kennedy-resident-evil-resident-evil-4-remake-hd-wallpaper-6b869ccd7371cf3965948b896dacbc10.jpg");
+  flex: 2;
+}
+
+.image-06 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/location_img01.jpg");
+  flex: 2;
+}
+
+.image-07 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/location_img02.jpg");
+  flex: 1;
+}
+
+.image-08 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/character_img-luis-02.jpg");
+  flex: 3;
+}
+
+.image-09 {
+  background-image: url("https://www.residentevil.com/re4/assets/images/character_img-ezalot.jpg");
+  flex: 1;
+}
+
+@media screen and (max-width: 680px) {
+  .image-row {
+    flex-direction: column;
+  }
+
+  .image-row .image {
+    flex-basis: auto;
+  }
+  .lead{
+    font-size: 20px;
+  }
+}
+
+/* Block Content */
+.block-content {
+  padding: 40px;
+  background-color: #000;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.container-1 {
+  margin: auto;
+  width: 75%;
+  text-align: center;
+}
+
+/* Cards Block */
+.card {
+  background: #000;
+  width: 650px;
+  height: 545px;
+  padding-top: 48px;
+  position: relative;
+}
+
+.card-image {
+  background-color: aqua;
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+.card-1 {
+  background-image: url(img/leon.jpeg);
+}
+
+.card-2 {
+  background-image: url(img/ada.jpeg);
+}
+
+.card-3 {
+  background-image: url(img/luis.jpeg);
+}
+
+.card-title {
+  font-family: "Resident Evil 4 Remake Font";
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: #fff;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card-text {
+  width: 80%;
+  margin: auto;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 10px;
+}
+@media screen and (max-width: 680px) {
+  .card {
+    background: #000;
+    width: 300px;
+    height: 545px;
+    padding-top: 48px;
+    position: relative;
+  }
+  
+  .card-image {
+    background-color: aqua;
+    height: 200px;
+    margin-bottom: 15px;
+    background-size: cover;
+  }
+  
+  .card-1 {
+    background-image: url(img/leon.jpeg);
+  }
+  
+  .card-2 {
+    background-image: url(img/ada.jpeg);
+  }
+  
+  .card-3 {
+    background-image: url(img/luis.jpeg);
+  }
+  
+  .card-title {
+    font-family: "Resident Evil 4 Remake Font";
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .card-text {
+    width: 80%;
+    margin: auto;
+    font-size: 13px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+div.swiper-button-next,
+div.swiper-button-prev {
+  top: 60%;
+}
+
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(180deg, rgba(31, 30, 30, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+@media screen and (max-width: 680px) {
+  .second-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(180deg, rgba(31, 30, 30, 0.3) 0%, rgba(0, 0, 0, 0.8) 100%), url(img/2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: -40px;
+  }
+  .ct-title{
+    font-size: 30px;
+  }
+  .container-2 {
+    width: 65%;
+  }
+  
+  .container-3 {
+    width: 65%;
+    padding-left: -50px;
+  }
+  li.step {
+    display: flex;
+  }
+  
+  li.step-1 {
+    display: flex;
+    margin-bottom: 1px;
+  }
+  
+  p.step-index {
+    margin: 0 30px 0 0;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .step-content {
+    font-size: 13px;
+  }
+.second-content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+}
+.cc-contact-footer-h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.cc-contact-footer {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.33;
+}
+}
+
+.second-content {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 80%;
+}
+
+.container-2 {
+  width: 50%;
+}
+
+.container-3 {
+  width: 50%;
+}
+
+.step-list-wrapper,
+.step-list-wrapper-1 {
+  font-family: "EB Garamond", serif;
+}
+
+li.step {
+  display: flex;
+}
+
+li.step-1 {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+p.step-index {
+  margin: 0 30px 0 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.step-content {
+  font-size: 18px;
+}
+
+h2 {
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.33;
+  font-size: 30px;
+}
+
+/* CP */
+.contact-person,
+.block-content {
+  padding: 30px;
+  background-color: #000;
+  color: white;
+}
+@media screen and (max-width: 400px) {
+video{
+  width: 300px;
+}
+  }
+
+.rich-text a {
+  text-decoration: none;
+}
+
+.container-4 {
+  margin: auto;
+  width: 87%;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-wrapper {
+  width: 65%;
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+}
+
+.button-wrapper {
+  padding-right: 17.5px;
+  padding-left: 17.5px;
+}
+
+.cc-contact-footer-h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.cc-contact-footer {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.33;
+}
+@media screen and (max-width: 400px) {
+ 
+.cc-contact-footer-h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.cc-contact-footer {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.33;
+}
+.cc-footer-link{
+  font-size: 15px;
+}
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  justify-content: space-between;
+  background-color: #000;
+  color: #fff;
+  margin: auto;
+  width: 90%;
+}
+
+.cc-footer-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+}
+@media screen and (max-width: 400px) {
+  .cc-footer-link{
+    font-size: 15px;
+  }
+  }
+
+.rich-text a {
+  text-decoration: none;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  color: #858585;
+  margin-bottom: 13px;
+}
+
+.footer-link-wrapper {
+  width: auto;
+}
+
+.footer-link-wrapper a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.rich-text {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+div a {
+  color: #fff;
+}
+
+.fa-brands {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.footer-copy {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: #858585;
+  margin-top: 15px;
+  margin-top: 10px;
+}
+
